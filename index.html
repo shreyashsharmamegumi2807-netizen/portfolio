@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="author" content="Shreyash Sharma - BTech Student" />
+    <meta name="description" content="Personal portfolio of Shreyash Sharma featuring Python, Quiz, and Book Reading List projects, live weather tool, and an AI chatbot assistant." />
+    <title>Shreyash Sharma - BTech Student - Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <p class="eyebrow">Personal Profile</p>
+        <h1>Shreyash Sharma</h1>
+        <p class="graduation-student">BTech Student · Computer Science &amp; Engineering</p>
+      </header> 
+
+      <main>
+        <section class="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
+          <p>
+            I am a BTech Student at the University of Jaipur. I am currently pursuing my degree in Computer Science and Engineering. I am interested in Web Development and Machine Learning.
+          </p>
+        </section>
+
+        <section class="skills" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+          <ul class="skills-list">
+            <li><span class="skill-icon">🌐</span> <strong>HTML</strong> — structuring web pages</li>
+            <li><span class="skill-icon">🎨</span> <strong>CSS</strong> — styling and layouts</li>
+            <li><span class="skill-icon">⚡</span> <strong>JavaScript</strong> — interactivity and logic</li>
+            <li><span class="skill-icon">🔧</span> <strong>Git</strong> — version control and collaboration</li>
+            <li><span class="skill-icon">🐍</span> <strong>Python</strong> — programming &amp; machine learning</li>
+          </ul>
+        </section>
+
+        <section class="projects" aria-labelledby="projects-heading">
+          <div class="projects-header-row">
+            <h2 id="projects-heading">Projects</h2>
+            <span class="projects-count-badge" id="projectCountBadge">5 projects</span>
+          </div>
+
+          <!-- Project Search and Filter Controls -->
+          <div class="project-search-container">
+            <label for="projectSearch" class="visually-hidden">Search projects</label>
+            <div class="search-input-group">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+              <input
+                type="search"
+                id="projectSearch"
+                placeholder="Search projects by name or technology (e.g., Python, Quiz, Book)..."
+                aria-label="Search projects by name or technology"
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                id="clearSearchBtn"
+                class="clear-search-btn"
+                aria-label="Clear search input"
+                title="Clear search"
+                hidden
+              >
+                ✕
+              </button>
+            </div>
+
+            <div class="search-meta">
+              <p id="projectSearchStatus" class="project-search-status" role="status" aria-live="polite"></p>
+              
+              <div class="quick-filters" aria-label="Quick technology filters">
+                <span class="filter-label">Quick filter:</span>
+                <button type="button" class="filter-pill active" data-filter="all">All</button>
+                <button type="button" class="filter-pill" data-filter="Python">Python</button>
+                <button type="button" class="filter-pill" data-filter="Quiz">Quiz</button>
+                <button type="button" class="filter-pill" data-filter="Book">Book</button>
+                <button type="button" class="filter-pill" data-filter="Machine Learning">Machine Learning</button>
+              </div>
+            </div>
+          </div>
+
+          <ul id="projectList" class="project-list">
+            <li class="project-card" data-tags="python data structures algorithms machine learning programming collection">
+              <div class="project-card-header">
+                <h3>
+                  <a href="https://github.com/shreyashsharmamegumi2807-netizen/python-programing" target="_blank" rel="noopener noreferrer">
+                    Python Programs Collection <span class="external-icon" aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+                <span class="project-badge">Python</span>
+              </div>
+              <p>
+                A collection of Python programs that cover various topics such as data structures, algorithms, and machine learning.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+            </li>
+
+            <li class="project-card" data-tags="python messy code cursor ai code improvement refactoring debugging">
+              <div class="project-card-header">
+                <h3>
+                  <a href="https://github.com/shreyashsharmamegumi2807-netizen/messy-python-code-correction-" target="_blank" rel="noopener noreferrer">
+                    Messy Python Code Improvement <span class="external-icon" aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+                <span class="project-badge">Python</span>
+              </div>
+              <p>
+                The messy python code was improved using Cursor AI. The tool helped detect a logical error, suggest the necessary changes, and verify the corrected program by checking its output.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Cursor AI</span>
+                <span class="tag">Refactoring</span>
+              </div>
+            </li>
+
+            <li class="project-card" data-tags="python bugs bug fixing cursor ai debugging logical error">
+              <div class="project-card-header">
+                <h3>
+                  <a href="https://github.com/shreyashsharmamegumi2807-netizen/python-bugs" target="_blank" rel="noopener noreferrer">
+                    Bug Fixing Project <span class="external-icon" aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+                <span class="project-badge">Python</span>
+              </div>
+              <p>
+                An incorrect Python program was identified and corrected using Cursor AI. The tool helped detect a logical error, suggest the necessary changes, and verify the corrected program by checking its output.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Cursor AI</span>
+                <span class="tag">Bug Fixing</span>
+              </div>
+            </li>
+
+            <li class="project-card" data-tags="quiz interactive quiz quizzzz javascript html css score questions">
+              <div class="project-card-header">
+                <h3>
+                  <a href="https://github.com/shreyashsharmamegumi2807-netizen/quizzzz" target="_blank" rel="noopener noreferrer">
+                    Interactive Quiz <span class="external-icon" aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+                <span class="project-badge">Quiz</span>
+              </div>
+              <p>
+                An interactive quiz application that allows users to answer questions, check their scores, and test their knowledge through a user-friendly interface.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Quiz</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Interactive</span>
+              </div>
+            </li>
+
+            <li class="project-card" data-tags="book reading list reading app vercel book tracker reading list web app">
+              <div class="project-card-header">
+                <h3>
+                  <a href="https://readingapp-4df4.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    Book Reading List Application <span class="external-icon" aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+                <span class="project-badge">Book</span>
+              </div>
+              <p>
+                A Book Reading List Application helps users maintain and manage their reading lists through a simple, user-friendly interface.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Book</span>
+                <span class="tag">Reading List</span>
+                <span class="tag">Web App</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="weather-section" aria-labelledby="weather-heading">
+          <div class="weather-header">
+            <h2 id="weather-heading">Live Weather</h2>
+            <span class="weather-pill">Real-time Data</span>
+          </div>
+          <p class="section-desc">Search real-time weather conditions for any city worldwide.</p>
+      
+          <div class="weather-search-row">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Enter a city (e.g. Jaipur, London, Tokyo)"
+              aria-label="City name for weather"
+            />
+            <button id="weatherButton" type="button">
+              Get Weather
+            </button>
+          </div>
+
+          <div class="weather-quick-picks">
+            <span class="quick-picks-label">Quick picks:</span>
+            <button type="button" class="quick-city-btn" data-city="Jaipur">Jaipur</button>
+            <button type="button" class="quick-city-btn" data-city="New Delhi">New Delhi</button>
+            <button type="button" class="quick-city-btn" data-city="London">London</button>
+            <button type="button" class="quick-city-btn" data-city="Tokyo">Tokyo</button>
+          </div>
+      
+          <div id="weatherResult" class="weather-result" aria-live="polite">
+            <p class="weather-placeholder-msg">Enter a city name above to view current temperature, condition, humidity, and wind speed.</p>
+          </div>
+        </section>
+
+        <!-- AI Assistant & Weather Chatbot Section -->
+        <section id="aiChatSection" class="ai-chat" aria-labelledby="chat-heading">
+          <div class="chat-header">
+            <h2 id="chat-heading">Ask My AI Assistant &amp; Weather Chatbot</h2>
+            <span class="chat-status-pill"><span class="status-dot"></span> Active</span>
+          </div>
+      
+          <p class="chat-desc">
+            Ask questions about my portfolio, projects, skills, or ask for live weather in any city (e.g., <em>"What is the weather in Jaipur?"</em>).
+          </p>
+      
+          <div
+            id="chatMessages"
+            class="chat-messages"
+            aria-live="polite"
+            role="log"
+          >
+            <div class="chat-message chat-assistant">
+              👋 Hi! I'm Shreyash's portfolio AI &amp; weather assistant. Ask me anything about my projects (Python, Quiz, Book Reading List), technologies, or ask me for the current weather in any city!
+            </div>
+          </div>
+      
+          <div class="chat-controls">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Ask a question or 'weather in Jaipur'..."
+              aria-label="Chatbot question input"
+            />
+      
+            <button id="sendButton" type="button">
+              Send
+            </button>
+          </div>
+      
+          <p id="chatStatus" class="chat-status" role="status"></p>
+      
+          <p class="chat-note">
+            Powered by Groq LLM &amp; OpenWeatherMap API. Available during local demonstration.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <p class="footer-contact">Jaipur, India · <a href="mailto:shryashsharmamegumi2807@gmail.com">shryashsharmamegumi2807@gmail.com</a></p>
+          
+          <!-- Theme toggle button at the bottom of the interface -->
+          <div class="footer-theme-toggle">
+            <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Toggle dark/light mode">
+              <span class="theme-icon" aria-hidden="true">🌙</span>
+              <span class="theme-text">Switch to Dark Mode</span>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+  </body>
+</html>
